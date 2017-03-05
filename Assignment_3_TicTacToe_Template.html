@@ -1,0 +1,175 @@
+<html>
+	<head>
+		<style>
+			.tictac
+			{
+				background:purple;
+				border:#999 10px groove;
+				width:180px;
+				height:180px;
+				font-size:150px;
+			}
+		</style>
+		<script>
+			// create a variable for if the game is over, initialize it to false
+
+			// create a variable for the current player, initialize it to 'O' or 'X'
+			// based on who will go first
+
+			// create an array for the squares using the regular methodology
+
+			// create a 2-d array of the win combinations, the data is as follows:
+			/*
+				0, 1, 2
+				3, 4, 5
+				6, 7, 8
+				0, 3, 6
+				1, 4, 7
+				2, 5, 8
+				0, 4, 8
+				2, 4, 6
+				
+			*/
+
+			// declare function named reset with no parameters
+
+			{
+				// write a for loop starting at index 1 instead of the 
+				// usual 0, that loops through all 9 positions
+
+				{
+					// create a variable to relate to each HTML button,
+					// set it equal to explicit text "sqr" concatenated
+					// with the looping variable of the for loop
+
+					// update the associated HTML element with the id
+					// equal to the variable created above, set it equal
+					// to and explicit empty string
+
+				}					
+				
+				// reset the global variable for the squares to an 
+				// empty array using the literal methodology
+
+				// reset the global variable for the game being over
+				// setting it equal to false
+
+			}
+			
+			// declare function named squareClick with one parameter called square
+
+			{
+				// create a variable that is set equal to the HTML element
+				// with the id of square (i.e. the parameter) and retrieve its value
+				//
+				// this will be used down below as the id to update the HTML element
+
+				// create a variable that is set equal to the JavaScript method call
+				// parseInt() passing as an argument square.substring(3, 4), 
+				// subtract one from the result of the parseInt method call
+				// 
+				// this will represent the index of the array of squares where
+				// the user clicked
+
+				// write an if statement that evaluates if the variable
+				// value is equal to explicit string ""
+
+				{
+					// update the HTML element using the parameter square as
+					// the id, setting its value equal to the global variable
+					// player
+					
+					// in array of the squares update element stored at
+					// the index retrieved above to the global variable
+					// player
+
+				}
+				
+				// call the function checkForWinner passing as an argument
+				// the explicit value 'X'
+
+				// call the function checkForWinner passing as an argument
+				// the explicit value 'O'
+
+				
+				// change the player
+				// write an if statement that checks if the player variable
+				// is equal to O, if true, set player to X
+
+				// write the else leg that switches player from X to O
+
+			}
+			
+			// declare function playAgain with no parameters
+			{
+				// create a variable that stores the response to a
+				// confirm dialog box with text "Play again?"
+				
+				// write an if statement that evaluates the user's response
+				// from above compared to true
+				{
+					// call function reset
+				}
+				// write the else leg
+				{
+					// display an alert dialog box that thanks the user
+					// for playing
+				}
+			}
+
+			// declare function checkForWinner with one parameter called value
+			{   
+
+				// write for loop, start at index 0, loop while
+				// the index less than the length of the array
+				// winCombinations
+				{
+					// write an if statement that evaluates
+					// the squares array [] where the index is
+					// array winCombinations[][], with the first index
+					// being the looping variable and the second index 
+					// being value 0, 1, or 2, checking if it is 
+					// equal to the value parameter;
+					// this if statement should be 
+					// three statements using the logical and &&
+					// e.g. squares[windCombinations[][]]  == value &&
+	
+					{
+						// display an alert dialog box stating which
+						// player won
+
+						// set the variable gameOver equal to true
+					}					
+				}
+				
+				// write an if statement checking if gameOver is true
+				{
+					// call function playAgain
+				}
+				// write the else leg
+				{
+					// use the return statement for program control
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<table>
+			<tr>
+				<td><input type="button" id="sqr1" name="sqr1" class="tictac" onClick="squareClick('sqr1')" /></td>
+				<!-- TODO add the other two squares using sqr2 and sqr3 for id -->
+			</tr>
+			<!-- TODO add another row-->
+			
+				<!-- TODO add sqr4 for id -->
+				<!-- TODO add sqr5 for id -->
+				<!-- TODO add sqr6 for id -->
+
+			<!-- TODO add another row-->
+
+				<!-- TODO add sqr7 for id -->
+				<!-- TODO add sqr8 for id -->
+				<!-- TODO add sqr9 for id -->
+		</table>
+	</body>
+</html>

@@ -1,0 +1,306 @@
+/* Wenyang Wu */
+/* 2/1/17 */
+
+/* page container */
+body {
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	background: linear-gradient(#FAEBD7, #4F6D93);
+	color: #000000;
+	font-family: "Arial", "Helvetica", sans-serif;
+}
+
+/* header */
+header{
+	background-color:#FFD700;
+	font-style: normal;
+	font-weight: bold;
+	color:#000000;
+	height: 60px;
+	text-align: center;
+	padding-top: 15px;
+	text-shadow: 0 0 3px #000000;
+}
+
+/* navigation */
+nav{
+	font-weight: 700;
+	font-style: normal;
+	padding: 20px;
+	float: left;
+	width: 160px;
+}
+
+nav a{
+	text-decoration: none;
+}
+
+nav ul{
+	font-size: 1.2em;
+	list-style-type: none;
+	margin: 0px;
+	padding-left: 0px;
+}
+
+nav a:link{
+	color: #FF69B4;
+}
+
+nav a:visited{
+	color: #9932CC;
+}
+
+nav a:hover{
+	color: #FFFFFF;
+}
+
+/* headings */
+h1{
+	font-family: "Georgia", "Times New Roman", serif;
+	font-style: normal;
+	font-weight: 900;
+	color: #000000;
+	margin-top: 0;
+}
+
+h2{
+	font-family: "Georgia", "Times New Roman", serif;
+	font-style: oblique;
+	font-weight: 400;
+	background-color: #B8860B;
+	color: #000000;
+	outline: 1px #CCCCCC;
+}
+
+h3{
+	font-family: "Georgia", "Times New Roman", serif;
+	font-style: normal;
+	font-weight: 400;
+	color: #000033;
+}
+
+/* list */
+ul li{
+	list-style-type: square;
+}
+
+/* footer */
+footer{
+	font-size: 75%;
+	font-style: italic;
+	font-weight: 400;
+	text-align: center;
+	font-family: "Georgia", "Times New Roman", serif;
+	padding: 20px 20px 20px 20px;
+	background-color: #FFFFFF;
+}
+
+/* custom requests */
+label{
+	float: left;
+	clear: left;
+	text-align: right;
+	display: inline-block;
+	width:100px;
+	padding-bottom: 20px;
+	padding-right: 100px;
+}
+
+input{
+	display: inline-block;
+	min-width: 200px;
+}
+
+fieldset{
+	background-color: #CCCCCC;
+	border: none;
+	border-radius: 2px;
+	margin-bottom: 12px;
+	overflow: hidden;
+	padding: 0.3em 1em;
+	-moz-box-shadow:    1px 1px 1px 1px #333333;
+    -webkit-box-shadow: 1px 1px 1px 1px #333333;
+    box-shadow:         1px 1px 1px 1px #333333;
+}
+
+fieldset ul{
+	list-style:none;
+	display: table;
+}
+
+fieldset li{
+	display: table-row;
+}
+
+/* content */
+main{
+	padding: 1px 20px 20px 20px;
+	background-color: #FFFFFF;
+	margin-left: 190px;
+	padding-left: 30px;
+}
+
+dt{
+	font-weight: bold;
+	line-height: 250%;
+	color: #000000;
+}
+
+.store{
+	color: #5C7FA3;
+	font-weight: bold;
+}
+
+.money{
+	color: #006400;
+}
+
+.boldness{
+	font-weight: 900;
+}
+
+.phonenumber{
+	text-decoration: none;
+	cursor: default;
+	color: inherit;
+}
+
+.submit{
+	background-color: #90C7E3;
+	width: 60px;
+	height: 30px;
+	font-size: 14px;
+}
+
+.hover{
+	background-color: yellow !important;
+	color: red;
+}
+
+#contact{
+	font-size: 90%;
+}
+
+/* image logos */
+#main-image{
+	height: 300px;
+	background-image: url("../images/sword-main.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	margin-left: 190px;
+	box-shadow: 10px 5px 5px red;
+	transform: rotate(180deg);
+	border-radius: 15px 50px;
+}
+
+#products-image{
+	height: 300px;
+	background-image: url("../images/products-main.jpg");
+	background-size: 100% 100%;
+	margin-left: 190px;
+}
+
+#aboutus-image{
+	height: 300px;
+	background-image: url("../images/aboutus-main.jpg");
+	background-size: 100% 100%;
+	margin-left: 190px;
+	border-width: 50px;
+	border-style: solid;
+	border-image: url("../images/border.png") 25 30 10 20 repeat;
+}
+
+@media only screen and (max-width: 64em){
+	body{
+		margin: 0;
+		background-color: #FFFFFF;
+	}
+	
+	main{
+		margin-left: 0;
+	}
+	
+	nav{
+		float: none;
+		width: auto;
+		text-align: center;
+		padding: 0.5em;
+	}
+	
+	nav li{
+		display: inline;
+		padding-top: 0.25em;
+		padding-bottom: 0.25em;
+		padding-left: 0.75em;
+		padding-right: 0.75em;
+	}
+	
+	#main-image{
+		margin-left: 0;
+		height: 200px;
+	}
+	
+	#products-image{
+		margin-left: 0;
+		height: 200px;
+	}
+	
+	#aboutus-image{
+		margin-left: 0;
+		height: 200px;		
+	}
+}
+
+@media only screen and (max-width: 37.5em){
+	header{
+		padding-top: 1em;
+	}
+	
+	main{
+		font-size: 90%;
+		padding-top: 0.1em;
+		padding-bottom: 0.1em;
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+	
+	h1{
+		font-size: 1.5em;
+	}
+	
+	nav li{
+		display: block;
+		margin: 0;
+		border-bottom: 2px solid #330000;
+	}
+	
+	nav a{
+		display: block;
+	}
+	
+	.phonenumber{
+		text-decoration: underline;
+		cursor: pointer;
+		color: blue;
+	}
+	
+	#main-image{
+		background-image: none;
+		height: 0;
+	}
+	
+	#products-image{
+		background-image: none;
+		height: 0;
+	}
+	
+	#aboutus-image{
+		background-image: none;
+		height: 0;
+	}
+	
+	label{
+		display: flex !important;
+	}
+}

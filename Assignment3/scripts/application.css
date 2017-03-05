@@ -1,0 +1,12 @@
+.square{
+	background-color:purple;
+    border:#999 10px groove;
+	width:180px;
+	height:180px;
+	font-size:150px;
+}
+
+table {
+    background-color: #FAFAFA;
+    text-align:center;
+}

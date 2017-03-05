@@ -1,0 +1,88 @@
+<!-- Wenyang Wu -->
+<!-- 2/1/17 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Medieval Shopping" />
+	<meta name="author" content="Wenyang Wu" />
+	<link rel="stylesheet" type="text/css" href="../css/knight.css">
+	<title>A Knight's Apparel</title>
+</head>
+
+<body onload="getDate()">
+<!-- Start page container -->
+<div id="wrapper">
+<!-- Header with logo-->
+<header>
+	<h1>A Knight's Apparel</h1>
+</header>
+
+<nav>
+	<ul>
+		<li><a href="../index.html">Home</a></li>
+		<li><a href="aboutus.html">About Us</a></li>
+		<li><a href="products.html">Products</a></li>
+		<li><a href="customreq.html">Custom Requests</a></li>
+	</ul>
+</nav>
+<!-- Main Content - Custom Requests-->
+<main>
+	<h2>Custom Requests at A Knight's Apparel</h2>
+	
+	Required fields are marked with an asterisk *<br><br>
+	
+	<fieldset>
+		<ul>
+			<li>
+				<label>*First Name:</label>
+				<input type="text" id="First_Name" name="myFName" required="required" autofocus="autofocus" />
+			</li>
+			<li>
+				<label>*Last Name:</label>
+				<input type="text" id="Last_Name" name="myLName" required="required" />
+			<li>
+				<label>*E-mail:</label>
+				<input type="email" id="Email" name="myEmail" required="required" />
+			</li>
+			<li>
+				<label>Phone:</label>
+				<input type="tel" name="myPhone" id=Phone />
+			</li>
+			<li>
+				<label>*Request:</label>
+				<textarea id="Comments" name="myComments" rows="2" cols="40" required="required"></textarea>
+			</li>
+		</ul>
+	
+		<input type="submit" value="Submit" class="submit">
+		<br><br>
+	</fieldset>
+	<!-- Company Information -->
+	<span class="store">
+	A Knight's Apparel</span><br>
+	<div id="contact">
+	3472 Nottingham Street<br>
+	Portland, Oregon 97201
+	<br>
+	<br>
+	Hours of Operation: Monday-Friday 9 AM - 5 PM
+	<br>
+	<a class="phonenumber" href="tel:503-514-6666">Phone: 503-514-6666</a><br>
+	<a class="phonenumber" href="fax:503-514-5555">Fax: 503-514-5555</a><br>
+	<br>
+	</div>
+	<!-- End of Company Information -->
+<footer>
+	Copyright &copy; 2017 A Knight's Apparel<br>
+	Point of Contact:<br>
+	<a href="mailto:knights@apparel.com">knights@apparel.com</a>
+	<p id="timestamp"></p>
+</footer>
+</main>
+<!-- End of main content container -->
+</div>
+<!-- End of page container -->
+</body>
+</html>
