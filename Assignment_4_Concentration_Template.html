@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			div#memory_board
+			{
+				background:#CCC;
+				border:#999 1px solid;
+				width:800px;
+				height:540px;
+				padding:24px;
+				margin:0px auto;
+			}
+			div#memory_board > div
+			{
+				background: pink;
+				border:#000 1px solid;
+				width:71px;
+				height:71px;
+				float:left;
+				margin:10px;
+				padding:20px;
+				font-size:64px;
+				cursor:pointer;
+				text-align:center;
+			}
+		</style>
+		<script>
+			// global variable declaration
+			
+			// TODO declare array "memory_array" that contains 24 items, 12 pairs (e.g. A, A, B, B, etc...)
+
+			// TODO declare array "memory_values" with no data 
+
+			// TODO declare array "memory_tile_ids" with no data 
+
+			// TODO declare a variable for keeping tracking of how many tiles are flipped 
+			
+			// TODO add an anonymous function to the Array object called memory_tile_shuffle
+			Array.prototype.memory_tile_shuffle = function()
+			{
+				// TODO declare variable "length" set equal to the length of the array
+
+				// TODO declare variable "rand"
+
+				// TODO declare variable "temp"
+				
+				// TODO loop while the value of --length (using predecrement) is greater than 0
+				while()
+				{
+					//TODO set variable rand equal to Math.floor(Math.random() * (length + 1))
+
+					// TODO set variable temp equal to this array at index rand
+
+					// TODO set this array index rand equal to this array index length
+
+					// TODO set this array index length equal to temp
+
+				}
+			}
+			
+			// TODO write function newBoard, no parameters, to reset data for the game
+			function
+			{
+				// TODO reset variable for tiles flipped to equal 0
+				
+				// TODO create a variable for output set equal to an empty string
+				
+				// TODO call anonymous function memory_tile_shuffle
+				
+				// TODO perform a for loop from index 0 to the length of memory_array
+				for()
+				{
+					// TODO concatenate variable "output" to equal
+					//      '<div id="tile_' 
+					//      concatenate the looping variable
+					//      concatenate '" onclick="memoryFlipTile(this,\''
+					//      concatenate memory_array with index of the looping variable
+					//      concatenate '\')"></div>'
+
+				}
+				
+				// TODO update the document object, element id called 'memory_board', innerHTML
+				//      so it is equal to the output variable
+
+			}
+			
+			// TODO write function memoryFlipTile with parameters tile and val
+			function 
+			{
+				// TODO check if the innerHTML of object tile is equal to "" and
+				//      the length of array memory_values is less than 2
+				if()
+				{
+					// style settings for the background of the tile object
+					tile.style.background = '#FFF';
+					
+					// TODO set object tile innerHTML equal to the val parameter
+					
+					// TODO check if the length of array memory_values equals 0
+					if()
+					{
+						// TODO call function push on array memory_values passing 
+						//       val as an argument
+						
+						// TODO call function push on array memory_tile_ids passing
+						//      tile.id as an argument
+
+					} 
+					// TODO check if the length of array memory_values equals 1
+					else if()
+					{
+						// TODO call function push on array memory_values passing 
+						//       val as an argument
+
+						// TODO call function push on array memory_tile_ids passing
+						//      tile.id as an argument
+						
+						// TODO check if memory_values index 0 equals memory_values index 1
+						if()
+						{
+							// TODO update the value of variable tiles_flipped to be increased by 2
+
+							// TODO clear array memory_values
+							
+							// TODO clear array memory_tile_ids
+							
+							// TODO check to see if the whole board is cleared by 
+							//      comparing the number of tiles_flipped being equal to
+							//      the length of array memory_array
+							if()
+							{
+								// TODO using an alert dialog box inform the user that
+								//      the board has been cleared and a new board is
+								//      being generated
+								
+								// TODO update object document, id 'memory_board', innerHTML
+								//      to be equal to ""
+								
+								// TODO call function newBoard
+
+							}
+						} 
+						// otherwise
+						else 
+						{
+							// TODO write function flip2Back so it flips the turned over tiles to
+							//      no longer be visible
+							function
+							{
+								// Flip the 2 tiles back over
+								// TODO declare variable tile_1 set equal to object document,
+								//      element id memory_tile_ids, index 0
+
+								// TODO declare variable tile_1 set equal to object document,
+								//      element id memory_tile_ids, index 1
+								
+								// style settings for tile_1
+								tile_1.style.background = 'pink';
+								tile_1.innerHTML = "";
+								
+								// style settings for tile_2
+								tile_2.style.background = 'pink';
+								tile_2.innerHTML = "";
+								
+								// TODO clear array memory_values
+								
+								// TODO clear array memory_tile_ids 
+							}
+							
+							// TODO call function setTimeout passing arguments function flip2Back
+							//      and the value 700
+
+						}
+					}
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<!-- create a div with id attribute equal to "memory_board" -->
+
+			<!-- in the script tag 
+				// TODO call function newBoard
+	</body>
+</html>
